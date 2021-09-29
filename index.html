@@ -1,0 +1,190 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "styles.css">
+</head>
+
+<body class = "text-black-700 bg-gray-200 font-body">
+
+    <!--content wrapper-->
+        <nav id= "navbar" class = "sticky -my-8 pt-2 top-0 z-50 bg-opacity-0 bg-purple-900 transition ease-in duration-500"> 
+            <div class = "px-8 mx-auto"> 
+                <div class = "flex justify-between align-center">     
+                    
+                    <!--Logo-->
+                    <div class = "flex">
+                        <a class = "flex items-center space-x-4" href = "#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
+                            </svg>
+                            <span class = "font-mono text-3xl text-white font-extrabold">JK</span>
+                        </a>
+                    </div>
+                    <!--Primary nav-->
+                    <div id= "nav-menu" class = "flex hidden text-white text-lg md:flex items-center md:relative space-x-6 py-2 px-3">
+                        
+                        <a class= "border-2 border-white rounded-full px-3 hover:bg-white hover:text-purple-800 transition ease-in-out duration-300" href="#about-me">About</a>
+                        <a class= "border-2 border-white rounded-full px-3 hover:bg-white hover:text-purple-800 transition ease-in-out duration-300" href="#portfolio">Portfolio</a>
+                        <a class= "border-2 border-white rounded-full px-3 hover:bg-white hover:text-purple-800 transition ease-in-out duration-300" href="#Contact">Contact</a>
+                        <a class= "border-2 border-white rounded-full px-3 hover:bg-white hover:text-purple-800 transition ease-in-out duration-300" href="img/Resume_2021.docx.pdf">Resume</a>
+
+                    </div>
+
+                    <!--Mobile nav. TODO: add JS functionality-->
+                    <div id= "hamburger-menu-icon" class = "flex flex-col text-white cursor-pointer md:hidden space-x-3 py-2 px-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+
+                        <div id= "nav-mobile" class = "bg-purple-800 flex hidden flex-col absolute inset-y-0 right-0 w-24 mt-14">
+                            <a class= "border-b-2 border-white px-3 py-2 bg-purple-800" href="#about-me">About</a>
+                            <a class= "border-b-2 border-white px-3 py-2 bg-purple-800" href="#portfolio">Portfolio</a>
+                            <a class= "border-b-2 border-white px-3 py-2 bg-purple-800" href="#Contact">Contact</a>
+                            <a class= "border-b-2 border-white px-3 py-2 bg-purple-800" href="#img/Re">Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <header class = "grid-rows-2 gap-4 bg-hero-pattern text-white py-32">
+            <!-- background by SVGBackgrounds.com -->
+            <h2 class = "text-center text-6xl py-5">Welcome!</h2>
+            <h3 class = "text-center text-xl">I'm Jared Kohrt, a full-stack web developer.</h3>
+        </header>
+
+        <main class = "flex flex-col justify-center">
+
+            <!--About me-->
+            <section id = "about-me" class = "flex flex-col my-12 mx-12 md:mx-24 lg:flex-row">
+                <div class = "flex-auto flex-col flex-grow-2 max-w-5xl max-w-xl">
+                    <h1 class = "text-size text-purple-800 text-3xl border-purple-800 border-b-2">About Me</h1>
+                    <span class= "mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, perferendis reprehenderit. Quasi porro ab, consequuntur reprehenderit officia nisi expedita eaque explicabo earum, corrupti amet dignissimos placeat labore pariatur facere. Quasi!</span>
+                </div>
+
+                <div id="Skills" class = "flex-auto min-w-max md:max-w-md max-w-xl">
+                    <div class = "grid gap-6 p-6 grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 md:gap-12 md:p-12">
+                        <img class = "m-auto h-12 md:h-24 " src="img/javascript.png" alt="A Javascript Logo">
+                        <img class = "m-auto h-12 md:h-24 " src="img/CSS.png" alt="A CSS logo">
+                        <img class = "m-auto h-12 md:h-24 " src="img/java.png" alt="A Java logo">
+                        <img class = "m-auto h-12 md:h-24 " src="img/html-5.png" alt="A HTML5 logo">
+                        <img class = "m-auto h-12 md:h-24 " src="img/R-logo.png" alt="An R logo">
+                        <img class = "m-auto h-12 md:h-24 " src="img/c-sharp.png" alt="A C# logo">
+                    </div> 
+                </div>
+            </section>
+
+            <!--Portfolio-->
+            <section id = "portfolio" class = "flex flex-col my-12 mx-12 md:mx-24">
+                <h1 class = "text-size text-purple-800 text-3xl border-purple-800 border-b-2 text-center ">Portfolio</h1>
+                <!--Cards go in this div-->
+                <div id = "Portfolio-cards" class = "flex flex-row flex-wrap justify-center my-12 mx-0 md:mx-16 ">
+
+                    <!--Quiz-->
+                    <div class = "rounded-3xl overflow-hidden shadow-md md:mr-12 mb-12 bg-gray-50">
+                        <a href = "https://jkohrt7.github.io/Javascript_Quiz/">
+                            <img class = "w-80 h-48 object-cover" src = "img/quiz.png">
+                        </a>
+                        <div class = "m-4 font-bold text-center text-xl ">
+                            <span>Javascript Quiz</span>
+                            <a href="https://github.com/jkohrt7/Javascript_Quiz">
+                                <img class = "h-11 mx-6 inline" src="img/github.svg" alt="github icon">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--Weather-->
+                    <div class = "rounded-3xl overflow-hidden shadow-md md:mr-12 mb-12 bg-gray-50">
+                        <a href = "https://jkohrt7.github.io/Weather-Dashboard/">
+                            <img class = "w-80 h-48 object-cover" src = "img/sky.jpg">
+                            <div class = "m-4 font-bold text-center text-xl">
+                                <span>OpenWeather App</span>
+                                <a href="https://github.com/jkohrt7/Weather-Dashboard">
+                                    <img class = "h-11 mx-6 inline" src="img/github.svg" alt="github icon">
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!--Solar System-->
+                    <div class = "rounded-3xl overflow-hidden shadow-md md:mr-12 mb-12 bg-gray-50">
+                        <a href = "https://jkohrt7.github.io/THREE.js_Solar-System/">
+                            <img class = "w-80 h-48 object-cover" src = "img/solar.jpg">
+                            <div class = "m-4 font-bold text-center text-xl">
+                                <span>Solar System</span>
+                                <a href="https://github.com/jkohrt7/THREE.js_Solar-System">
+                                    <img class = "h-11 mx-6 inline" src="img/github.svg" alt="github icon">
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--Contact-->
+            <!-- <section id= "Contact" class = "flex flex-col my-12 mx-24">
+                <h1 class = "text-size text-purple-800 text-3xl border-purple-800 border-b-2 text-center">Contact</h1>
+                <div class = "flex flex-col justify-center md:flex-row ">
+                    <div class= "flex justify-center">
+                        <img class = "text-center rounded-full h-72 p-4" src="img/Jared_kohrt_picture.jpg" alt="A picture of Jared--pasty with brown hair and glasses">
+                    </div>
+
+                    <form class = "grid grid-cols-2 gap-4 p-6">
+                        <input class = "rounded-lg p-2" type = "text" id = "fname" name = "fname" placeholder="First Name">
+                        <input class = "rounded-lg p-2" type = "text" id = "lname" name = "lname" placeholder="Last Name">
+                        <input class = "rounded-lg col-span-2 p-2" type = "email" id = "email" name = "email" placeholder="example@email.com">
+                        <textarea class = "rounded-lg col-span-2 h-28 resize-y p-2" placeholder = "Message"></textarea>
+                    </form>
+                </div>
+            </section> -->
+
+            <section id= "Contact" class = "flex flex-col my-12 mx-12 md:mx-24">
+                <h1 class = "text-size text-purple-800 text-3xl border-purple-800 border-b-2 text-center">Contact</h1>
+                <div class = "flex flex-col justify-center md:flex-row ">
+                    <div class= "flex justify-center">
+                        <img class = "text-center rounded-full h-72 p-4 min-w-72px object-cover" src="img/Jared_kohrt_picture.jpg" alt="A picture of Jared--pasty with brown hair and glasses">
+                    </div>
+
+                    <div class = "grid grid-cols-1 items-center">
+                        <div class = flex>
+                            <svg class = "h-8"xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg> 
+                            <h2 class= "sm:text-lg md:text-2xl pl-6">(336) 908-2364</h2>
+                        </div>
+
+                        <div class = flex>
+                            <svg class = "h-8" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <h2 class= "md:text-2xl pl-6">jkohrt7@gmail.com</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <section class = "flex flex-row justify-center align-middle h-16 bg-purple-900 p-2">
+
+                <a href="https://github.com/jkohrt7">
+                    <img class = "h-11 mx-6" src="img/github.svg" alt="github icon">
+                </a>
+                
+                <a href="https://www.linkedin.com/in/jared-kohrt-85029a19a/">
+                    <img class = "h-11 mx-6" src="img/linkedin.svg" alt="the linkedin icon">
+                </a>
+
+            </section>
+
+
+        </footer>
+
+</body>
+
+<script src="js/main.js"></script>
+</html>
